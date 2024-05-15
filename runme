@@ -1,0 +1,22 @@
+#!/bin/bash
+a=hello
+b="$a"
+c=$a
+d='$a'
+e=`date`
+echo $a
+echo $b
+echo $c
+echo $d
+echo $e
+
+
+a=1
+b=1
+if [ $a -eq $b ];then
+	echo "yes"
+	(( b += 1 ))
+	echo $b
+else
+	echo "no"
+fi
